@@ -172,7 +172,9 @@ var Stadia_Outdoors = L.tileLayer('https://tiles.stadiamaps.com/tiles/outdoors/{
 	layer.bindTooltip(feature.properties['name']);
  }
  }).addTo(map);
-
+		
+map.fitBounds(myRoute.getBounds());
+		
 	</script>
 
 </body>
